@@ -11,6 +11,9 @@
       "branch": {
         "value": "(your github branch like master"
       },
+      "storageNamePrefix": {
+        "value": "(prefix for storage account name, max of 11 lower case letters like oprovprod)"
+      },
       "TENANT": {
         "value": "(your tenant ID)"
       },
