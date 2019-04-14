@@ -10,7 +10,11 @@ Collaborative workspaces are a lot more useful if they're consistent and easy to
 
 Manually creating and configuring each workspace - each Microsoft Team in this case - is labor intensive and sufficiently error-prone that consistency is unlikely in any but the smallest of organizations. Some kind of templating and provisioning system is needed to consistently stamp out, say, Engineering Project Teams or Marketing Campaign Teams.
 
-Microsoft Teams provides two main ways to do this:
+## Provisioning Teams
+
+> While the initial POC provisions Teams using the Graph API, the next step for this project is to use the new PnP Tenant Templates. This will allow provisioning more than just the Team, and thus to include other content in the Office 365 Group such as SharePoint content. This will mean a rewrite of the Azure Functions to accomodate the Tenant Templates runtime. For more thoughts on the future diretion of this project, see [Future Direction](./05-FutureDiretion.md).
+
+Microsoft Teams provides two main ways to create a new team based on a "template":
 
 1. Teams can be ["cloned"](https://support.office.com/en-us/article/create-a-team-from-an-existing-team-f41a759b-3101-4af6-93bd-6aba0e5d7635), effectively copied with a new name, description, and membership. For each category of Team, a "master" Team is maintained with no content; the "master" Team is then cloned when a new Team is needed. This has the advantage that power users can maintain the "master" Teams without technical assistance.
 

@@ -1,6 +1,8 @@
 # TeamsProvisioning Sample
 
-This repository contains a set of Azure Functions for Microsoft Teams provisioning. They're designed to work in concert with Microsoft Flow or Logic Apps to handle the business process, and to create Teams based on "templates" (JSON files) stored in SharePoint. Given these tools, a Microsoft partner or customer can create a scalable Teams provisioning solution tailored to their needs.
+This repository contains a set of Azure Functions for Microsoft Teams provisioning. They're specifically  designed to work in concert with Microsoft Flow or Logic Apps to handle the business process, and to create Teams using appropriate APIs in Azure Functions. When a production-ready version is complete, a Microsoft partner or customer will be able to create a scalable Teams provisioning solution tailored to their needs with little or no coding.
+
+This initial POC is based on "templates" (JSON files) stored in SharePoint. In the future, it will be based on PnP Tenant Templates.
 
 ![Solution Architecture](./Documentation/images/SolutionArchitecture.png)
 
@@ -13,6 +15,8 @@ The documentation is organized as follows:
 1. [Writing a Teams provisioning Flow](./Documentation/03-BuildingFlow.md)
 
 1. [Learn from the code](./Documentation/04-Learning.md)
+
+1. [Future Direction](./Documentation/05-FutureDirection.md)
 
 ## Prerequisites
 
