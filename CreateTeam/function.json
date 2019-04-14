@@ -1,0 +1,19 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "create-team-request-queue",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "queue",
+      "direction": "out",
+      "name": "myOutputQueueItem",
+      "queueName": "create-team-completion-queue",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
